@@ -8,5 +8,5 @@ export const initsocket =async ()=>{
         transports: ['websocket'],  
     
     }
-    return io(process.env.REACT_APP_BAKEND_URL || 'http://localhost:5000' ,option);
+    return io(process.env.REACT_APP_BAKEND_URL ,option);
 }
